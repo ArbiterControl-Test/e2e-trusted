@@ -22,7 +22,7 @@ permissions:
 jobs:
   secret-scan:
     if: github.event.action != 'edited' || github.event.changes.base.ref.from || github.event.changes.base.sha.from
-    uses: ArbiterControl-Test/arbiter-trusted/.github/workflows/secret-scan.yml@1447674b155371442ed8ebd2b8c111b51bc736d9
+    uses: ArbiterControl-Test/arbiter-trusted/.github/workflows/secret-scan.yml@f4c77e6529c4eb9ff239fdcb3dfff4dbabb5d193
   dependency-check:
     if: github.event.action != 'edited' || github.event.changes.base.ref.from || github.event.changes.base.sha.from
-    uses: ArbiterControl-Test/arbiter-trusted/.github/workflows/dependency-check.yml@1447674b155371442ed8ebd2b8c111b51bc736d9
+    uses: ArbiterControl-Test/arbiter-trusted/.github/workflows/dependency-check.yml@f4c77e6529c4eb9ff239fdcb3dfff4dbabb5d193
