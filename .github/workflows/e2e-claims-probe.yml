@@ -1,0 +1,16 @@
+# PLAN-207-R4 § 4 (ARB-324): test-only. Calls arbiter-trusted's claims probe on the caller's trigger, at the caller's
+# pinned commit. It posts nothing to Arbiter. Synthetic fixture: no real code or data.
+name: Arbiter e2e claims probe
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened, edited]
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  claims-probe:
+    if: github.event.action != 'edited' || github.event.changes.base.ref.from || github.event.changes.base.sha.from
+    uses: ArbiterControl-Test/arbiter-trusted/.github/workflows/claims-probe.yml@1447674b155371442ed8ebd2b8c111b51bc736d9
