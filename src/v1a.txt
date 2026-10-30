@@ -1,0 +1,2 @@
+synthetic: V1a
+token = "ARBITER-UC4-TEST-9725e9f07f02f9210df7bb175c682e36"
