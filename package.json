@@ -5,6 +5,7 @@
   "description": "Synthetic fixture for the Arbiter live suite (ARB-324). No real code or data.",
   "dependencies": {
     "is-number": "7.0.0",
+    "ansi-regex": "5.0.0",
     "json5": "2.2.1"
   }
 }
