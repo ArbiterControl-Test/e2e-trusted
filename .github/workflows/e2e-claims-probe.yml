@@ -13,4 +13,4 @@ permissions:
 jobs:
   claims-probe:
     if: github.event.action != 'edited' || github.event.changes.base.ref.from || github.event.changes.base.sha.from
-    uses: ArbiterControl-Test/arbiter-trusted/.github/workflows/claims-probe.yml@f4c77e6529c4eb9ff239fdcb3dfff4dbabb5d193
+    uses: ArbiterControl-Test/arbiter-trusted/.github/workflows/claims-probe.yml@47179fcc5eac312b40b7916d1011da509b6cad81
